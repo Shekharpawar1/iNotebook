@@ -1,13 +1,27 @@
-// const mongoose = require('mongoose');
-// mongoose.connect('mongodb://localhost:27017/test');
+const mongoose=require('mongoose'),
+      express=require("express");
 
-// const Cat = mongoose.model('Cat', { name: String });
+const connectToMongo =()=> {
+    mongoose.connect("mongodb://localhost:27017/",()=>{
+        console.log("Connected to db")
+})}
 
-// const kitty = new Cat({ name: 'Zildjian' });
-// kitty.save().then(() => console.log('meow'));
+connectToMongo();
+const app=express();
+const PORT=3000 || process.env.PORT;
+app.use(express.json())
 
-import { Schema } from "mongoose";
-import express from "express";
-const express=require("express");
-// const { default: mongoose } = require("mongoose")
-      
+// app.get("/",(req,res)=>{
+//     res.send("hello world")
+// })
+// available routes
+app.use("/api/auth/",require("./routes/auth"))
+app.use("/api/notes",require("./routes/notes"))
+
+
+
+app.listen(PORT,()=>{
+    console.log(`connected to the ${PORT}`)
+})
+
+
