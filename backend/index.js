@@ -2,7 +2,7 @@ const mongoose=require('mongoose'),
       express=require("express");
 
 const connectToMongo =()=> {
-    mongoose.connect("mongodb://localhost:27017/",()=>{
+    mongoose.connect("mongodb://localhost:27017/iNotebook",()=>{
         console.log("Connected to db")
 })}
 
