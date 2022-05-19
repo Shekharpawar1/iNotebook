@@ -8,6 +8,7 @@ const {
   body,
   validationResult
 } = require('express-validator');
+const fetchUser = require("../middleware/fetchUser");
 const JWT_SECRET="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum quis leo vel rhoncus. Praesent felis mi, accumsan venenatis scelerisque sit amet, sodales in erat. In dapibus vel velit sodales commodo. Maecenas mollis enim non elit vulputate, eget maximus turpis tempus. Pellentesque justo ex, facilisis id purus eu, dictum vestibulum mi. Suspendisse neque ante, dictum eu lacus at, hendrerit dapibus arcu. Mauris aliquam mauris at lacus convallis tristique. Donec in ex sapien. Sed luctus dignissim efficitur. Nunc rutrum sapien vitae scelerisque mollis. Etiam pellentesque nec nulla ac faucibus. Nulla a nisl tellus. Aliquam sed nisl non dui consectetur sagittis. Proin lectus neque, vestibulum eu aliquet sed, viverra at nulla. Nam facilisis, tellus sed dignissim tincidunt, neque lacus lobortis felis, elementum scelerisque quam sem at augue. Sed sed eros felis. "
 router.post("/createUser", [body("name", "Min length of Name should be 3").isLength({
   min: 3
@@ -94,4 +95,21 @@ router.post("/signUp", [body('email', "Email is not valid ").isEmail(), body("pa
     return res.status(500).json(" Internal Server error")
   }
 })
+
+
+
+//getUser route
+router.post("/getUSer", fetchUser, async (req, res) => {
+  
+  try{
+   let  userId=req.user.id;
+    let user = await User.findOne({
+      userId}).select("-password");
+    res.send(user)
+  }catch(err){
+    console.log(err);
+    return res.status(500).json(" Internal Server error")
+  }
+})
+
 module.exports = router;
