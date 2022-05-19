@@ -36,4 +36,27 @@ router.get("/addnotes",fetchUser,[body('title',"title should be 4 or more charac
     
 })
 
+
+//route 3 for notes updation
+router.post("/updatenotes/:id",fetchUser,async(req,res)=>{
+
+
+const {title,description,tag}=req.body;
+const newNote={};
+if(title) {
+newNote.title=title;}
+if(description){ 
+newNote.description=description;}
+
+if(tag) {
+newNote.tag=tag;}
+///finding the note by id
+let note= await Notes.findById(req.params.id);
+if(!note) res.status(400).send("not found")
+if(note.user.toString()!==req.user.id) res.status(401).send("Unauthorized")
+note=await Notes.findByIdAndUpdate(req.params.id,{$set:newNote},{new:true})
+res.json(note)
+})
+
+
 module.exports=router
