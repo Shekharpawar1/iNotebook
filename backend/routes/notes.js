@@ -68,7 +68,7 @@ catch(error){
 router.delete("/deletenotes/:id",fetchUser,async(req,res)=>{
 
 
-    const {title,description,tag}=req.body;
+//     const {title,description,tag}=req.body;
     
     ///finding the note by id
     try{
