@@ -63,7 +63,7 @@ router.post("/createUser", [body("name", "Min length of Name should be 3").isLen
 
 
 //sign up route
-router.post("/signUp", [body('email', "Email is not valid ").isEmail(), body("password", "enter correct credentials").exists()], async (req, res) => {
+router.post("/logIn", [body('email', "Email is not valid ").isEmail(), body("password", "enter correct credentials").exists()], async (req, res) => {
   // const user=User(req.body)
   // user.save()
   // console.log(res.send(user))
@@ -99,7 +99,7 @@ router.post("/signUp", [body('email', "Email is not valid ").isEmail(), body("pa
 
 
 //getUser route
-router.post("/getUser", fetchUser, async (req, res) => {
+router.post("/getuser", fetchUser, async (req, res) => {
   
   try{
    let  userId=req.user.id;
