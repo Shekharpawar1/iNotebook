@@ -59,4 +59,19 @@ res.json(note)
 })
 
 
+//route4 deletion of the note
+router.delete("/deletenotes/:id",fetchUser,async(req,res)=>{
+
+
+    const {title,description,tag}=req.body;
+    
+    ///finding the note by id
+    let note= await Notes.findById(req.params.id);
+    if(!note) res.status(400).send("not found")
+    if(note.user.toString()!==req.user.id) res.status(401).send("Unauthorized")
+    note=await Notes.findByIdAndDelete(req.params.id)
+    res.json("success")
+    })
+
+
 module.exports=router
