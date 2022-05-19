@@ -49,11 +49,49 @@ router.post("/createUser", [body("name", "Min length of Name should be 3").isLen
     // ));
     const data={user:{id:user.id}};
     let  authtoken = jwt.sign(data, JWT_SECRET);
-    res.send(authtoken)
+    res.send(`authtoken:${authtoken}`)
   }catch(err){
     console.log(err);
     return res.status(500).json(" Internal Server error")
   }
 })
 
+
+
+
+
+
+//sign up route
+router.post("/signUp", [body('email', "Email is not valid ").isEmail(), body("password", "enter correct credentials").exists()], async (req, res) => {
+  // const user=User(req.body)
+  // user.save()
+  // console.log(res.send(user))
+  //validation returning error
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({
+      errors: errors.array()
+    });
+  }
+  const {email,password}=req.body;
+  try{
+    let user = await User.findOne({
+      email});
+    if (!user) {
+      return res.status(400).json({
+        errors: "Enter Correct Credentials"
+      })
+      }
+    const passwordCompare=await bcrypt.compare(password,user.password);
+    if(!passwordCompare){return res.status(400).json({
+      errors: "Enter Correct Credentials"
+    })}
+    const payload={user:{id:user.id}}
+    let  authtoken = jwt.sign(payload, JWT_SECRET);
+    res.send(`authtoken:${authtoken}`)
+  }catch(err){
+    console.log(err);
+    return res.status(500).json(" Internal Server error")
+  }
+})
 module.exports = router;
