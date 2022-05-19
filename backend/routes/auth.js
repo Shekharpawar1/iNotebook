@@ -99,7 +99,7 @@ router.post("/signUp", [body('email', "Email is not valid ").isEmail(), body("pa
 
 
 //getUser route
-router.post("/getUSer", fetchUser, async (req, res) => {
+router.post("/getUser", fetchUser, async (req, res) => {
   
   try{
    let  userId=req.user.id;
