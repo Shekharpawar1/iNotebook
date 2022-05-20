@@ -41,7 +41,7 @@ router.get("/addnotes",fetchUser,[body('title',"title should be 4 or more charac
 router.post("/updatenotes/:id",fetchUser,async(req,res)=>{
 
 
-// const {title,description,tag}=req.body;
+const {title,description,tag}=req.body;
 try{
 const newNote={};
 if(title) {

@@ -24,95 +24,204 @@ export const NoteState=(props)=>{
         "__v": 0
       },
       {
-        "_id": "62861b9962f650c0de1dfb74",
+        "_id": "62861b6fa0267fccdb11361c",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:27:37.195Z",
+        "date": "2022-05-19T10:26:55.757Z",
         "__v": 0
       },
       {
-        "_id": "62861b9a62f650c0de1dfb76",
+        "_id": "62861b9762f650c0de1dfb72",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:27:38.529Z",
+        "date": "2022-05-19T10:27:35.849Z",
         "__v": 0
       },
       {
-        "_id": "62861bb562f650c0de1dfb78",
+        "_id": "62861b6fa0267fccdb11361c",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:28:05.234Z",
+        "date": "2022-05-19T10:26:55.757Z",
         "__v": 0
       },
       {
-        "_id": "62861bc3bed5cca5761a491b",
+        "_id": "62861b9762f650c0de1dfb72",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:28:19.456Z",
+        "date": "2022-05-19T10:27:35.849Z",
         "__v": 0
       },
       {
-        "_id": "62861bd4bee738b70440d6c5",
+        "_id": "62861b6fa0267fccdb11361c",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:28:36.724Z",
+        "date": "2022-05-19T10:26:55.757Z",
         "__v": 0
       },
       {
-        "_id": "62861c17bee738b70440d6c8",
+        "_id": "62861b9762f650c0de1dfb72",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:29:43.711Z",
+        "date": "2022-05-19T10:27:35.849Z",
         "__v": 0
       },
       {
-        "_id": "62861c31fafcda846ebaa00b",
+        "_id": "62861b6fa0267fccdb11361c",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:30:09.858Z",
+        "date": "2022-05-19T10:26:55.757Z",
         "__v": 0
       },
       {
-        "_id": "62861c575c66386e7576ace7",
+        "_id": "62861b9762f650c0de1dfb72",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:30:47.031Z",
+        "date": "2022-05-19T10:27:35.849Z",
         "__v": 0
       },
       {
-        "_id": "62861ca4ea3e0cec262c143e",
+        "_id": "62861b6fa0267fccdb11361c",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:32:04.634Z",
+        "date": "2022-05-19T10:26:55.757Z",
         "__v": 0
       },
       {
-        "_id": "62861cf590a3a3a4cb05cbad",
+        "_id": "62861b9762f650c0de1dfb72",
         "user": "6285fe0e5275f803471e6b2f",
         "title": "title",
         "description": "test note",
         "tages": "General",
-        "date": "2022-05-19T10:33:25.289Z",
+        "date": "2022-05-19T10:27:35.849Z",
         "__v": 0
-      }
+      },
+      {
+        "_id": "62861b6fa0267fccdb11361c",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:26:55.757Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b9762f650c0de1dfb72",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:27:35.849Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b6fa0267fccdb11361c",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:26:55.757Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b9762f650c0de1dfb72",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:27:35.849Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b6fa0267fccdb11361c",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:26:55.757Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b9762f650c0de1dfb72",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:27:35.849Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b6fa0267fccdb11361c",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:26:55.757Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b9762f650c0de1dfb72",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:27:35.849Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b6fa0267fccdb11361c",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:26:55.757Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b9762f650c0de1dfb72",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:27:35.849Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b6fa0267fccdb11361c",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:26:55.757Z",
+        "__v": 0
+      },
+      {
+        "_id": "62861b9762f650c0de1dfb72",
+        "user": "6285fe0e5275f803471e6b2f",
+        "title": "title",
+        "description": "test note",
+        "tages": "General",
+        "date": "2022-05-19T10:27:35.849Z",
+        "__v": 0
+      },
+      
     ]
 
     const [notes, setNotes] = useState(note)

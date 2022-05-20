@@ -8,9 +8,8 @@ const notesSchema=new mongoose.Schema({
         required:true
     },
     description:{
-        type:String
     },
-    tages:{
+    tags:{
         type:String,
         default:"General"
     },

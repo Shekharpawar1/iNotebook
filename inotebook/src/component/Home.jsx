@@ -1,39 +1,39 @@
-import React,{useContext} from 'react'
-import {NoteContext} from "../context/NotesContext"
-import { NoteState } from '../context/NotesState';
+import React from 'react'
+
+import Notes from './Notes';
 
 
 function Home() {
-  const context=useContext(NoteContext);
-  const {notes,setNotes}=context;
+  
   return (
     <>
       <div className="container my-3">
-        <h1>Add Notes</h1>
+        <h1 className='text-center'>Add Notes</h1>
         <div className='form'>
         <form className='my-3'>
           <div className="form-group my-3">
-            <label htmlFor="exampleInputEmail1">Email address</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label htmlFor="title">title</label>
+            <input type="email" className="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter title"/>
+   
           </div>
           <div className="form-group my-3">
-            <label htmlFor="exampleInputPassword1">Password</label>
-            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
+            <label htmlFor="Tags">Tags</label>
+            <input type="email" className="form-control" id="Tags" aria-describedby="emailHelp" placeholder="Enter tag"/>
+            <small id="tagsHelp" className="form-text text-muted">This is optional</small>
           </div>
-          <div className="form-group form-check my-3">
-            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-            <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
+          <div className="form-group my-3">
+            <label htmlFor="exampleInputPassword1 ">Description</label>
+            <textarea className="form-control" row="8" placeholder='Enter description'></textarea>
+            
           </div>
-          <button type="submit" className="btn btn-primary my-3">Submit</button>
+          
+          <button type="submit" className="btn btn-lg btn-primary my-3">submit</button>
         </form>
         </div>
       </div>
-      <div className='container my-3'>
-        <h1> Your Notes</h1>
-        {notes.map((note)=>{
-          return note.title
-          })}
+      <div className='row my-3'>
+        <Notes/>
+        
       </div>
     </>
   )
