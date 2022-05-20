@@ -21,7 +21,7 @@ app.use("/api/notes",require("./routes/notes"))
 
 
 app.listen(PORT,()=>{
-    console.log(`connected to the ${PORT}`)
+    console.log(`connected to the http://localhost:${PORT}`)
 })
 
 
