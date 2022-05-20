@@ -8,7 +8,7 @@ const connectToMongo =()=> {
 
 connectToMongo();
 const app=express();
-const PORT=3000 || process.env.PORT;
+const PORT=5000 || process.env.PORT;
 app.use(express.json())
 
 // app.get("/",(req,res)=>{
